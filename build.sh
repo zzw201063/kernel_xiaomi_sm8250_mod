@@ -8,8 +8,10 @@ export CCACHE_DIR="$HOME/.cache/ccache_pad5pkernel"
 export PATH="/usr/bin/ccache:$PATH"
 echo "CCACHE_DIR: [$CCACHE_DIR]"
 
-ccache -v
 ccache --version
+ccache -s
+
+rm -rf out
 
 MAKE_ARGS="AS=as ARCH=arm64 SUBARCH=arm64 O=out CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_ARM32=arm-linux-gnueabi- CROSS_COMPILE_COMPAT=arm-linux-gnueabi- CLANG_TRIPLE=aarch64-linux-gnu-"
 
