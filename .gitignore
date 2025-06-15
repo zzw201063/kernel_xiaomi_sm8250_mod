@@ -136,3 +136,5 @@ all.config
 kernel/configs/android-*.cfg
 
 out/
+
+anykernel3*.zip
