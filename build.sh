@@ -128,7 +128,7 @@ scripts/config --file out/.config \
 make CC="ccache clang" CXX="ccache clang++" $MAKE_ARGS -j12
 
 cd out/arch/arm64/boot/
-wget https://github.com/ShirkNeko/SukiSU_KernelPatch_patch/releases/download/0.11-beta/patch_linux
+wget https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch/releases/download/0.12.0/patch_linux
 chmod +x patch_linux
 ./patch_linux
 rm Image
