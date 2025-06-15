@@ -447,7 +447,8 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Werror-implicit-function-declaration \
 		   -Werror=return-type -Wno-format-security -Wno-error \
 		   -std=gnu89 -Wno-ignored-optimization-argument \
-		   -Wno-default-const-init-var-unsafe -Wno-default-const-init-field-unsafe 
+		   -Wno-default-const-init-var-unsafe -Wno-default-const-init-field-unsafe \
+		   -Wno-error 
 KBUILD_CPPFLAGS := -D__KERNEL__
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
