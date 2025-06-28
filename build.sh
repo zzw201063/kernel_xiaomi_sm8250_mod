@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-TOOLCHAIN_PATH=$HOME/kernel/toolchains/zyc-clang/bin
+TOOLCHAIN_PATH=$HOME/toolchains/zyc-clang/bin
 echo "TOOLCHAIN_PATH: [$TOOLCHAIN_PATH]"
 export PATH="$TOOLCHAIN_PATH:$PATH"
 export CCACHE_DIR="$HOME/.cache/ccache_pad5pkernel" 
