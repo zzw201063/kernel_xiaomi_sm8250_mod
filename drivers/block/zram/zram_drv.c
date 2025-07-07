@@ -38,7 +38,6 @@
 #include <linux/sched/signal.h>
 #include <linux/memcontrol.h>
 #include <linux/vmstat.h>
-#include <linux/mm.h>
 #include "zram_drv.h"
 
 static DEFINE_IDR(zram_index_idr);
@@ -2452,7 +2451,7 @@ static ssize_t disksize_store(struct device *dev,
 	struct zram *zram = dev_to_zram(dev);
 	int err;
 
-	disksize = ((u64)totalram_pages << PAGE_SHIFT);
+	disksize = memparse(buf, NULL);
 	if (!disksize)
 		return -EINVAL;
 
